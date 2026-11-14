@@ -42,3 +42,37 @@ Compruebe la consola y los archivos, abra ambas figuras, lea sus ejes y registre
 ## Reproducibilidad y alcance
 
 Los datos son sintéticos, no requieren conexión y los valores numéricos deben reproducirse dentro de tolerancia. La hora en los metadatos y el formato binario de las figuras pueden variar entre ejecuciones o plataformas. No se exige identidad byte por byte de los PDF/PNG. Una prueba computacional exitosa no valida una predicción sobre República Dominicana o Estados Unidos.
+
+
+## Validación en GNU Octave — 14 de noviembre de 2026
+
+**Equipo:** iMac, macOS  
+**Software:** GNU Octave 11.3.0  
+**Arquitectura:** aarch64-apple-darwin27.0.0
+
+### Comandos ejecutados
+
+```matlab
+check_environment(true)
+run_intro
+r = run_example(false);
+report = run_tests();
+```
+
+### Resultados
+
+- Ejecución numérica satisfactoria.
+- 20 de 20 pruebas automáticas superadas.
+- Escenario A, año 20: 148.5947.
+- Escenario B, año 20: 180.6111.
+- Brecha relativa: 21.5461 %.
+- Comprobaciones de archivos CSV superadas.
+
+### Limitación pendiente
+
+Ghostscript (`gs`) no está disponible en el PATH del equipo.
+La generación y exportación de ciertos formatos gráficos
+requiere comprobación adicional.
+
+La validación numérica no certifica todavía todas las
+funciones gráficas.

@@ -17,3 +17,6 @@ octave-workspace*
 # Editor temporary files
 *.swp
 *.swo
+
+# Generated results from Octave simulations
+common/unidad-1-primer-experimento/outputs/
