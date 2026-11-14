@@ -1,0 +1,19 @@
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Octave temporary files
+octave-workspace
+octave-workspace*
+*~
+
+# Editor temporary files
+*.swp
+*.swo
