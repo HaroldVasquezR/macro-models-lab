@@ -1,8 +1,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % Introduccion a Octave 
-%  Profesor Harold V�squez, Ph.D.
-%  email@haroldvasquez.com 
-%  Macroeconomia II
+%  Profesor Harold Vásquez, Ph.D.
+%  harold.vasquez@intec.edu.do 
+%  Modelos Macroeconómicos Computacionales
 %  Instituto Tecnologico de Santo Domingo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Octave desde la linea de comandos
@@ -26,7 +26,7 @@ VectorF = [1 2 3 4]
 VectorC = [1;2;3;4]
 % Podemos acceder a un elemento particulas de matrices con "( )"
 % Podemos crear sub-matrices utilizando el " : "
-% También usamos " : " para acceder a TODOS los elementos de una fila/columna
+% TambiÃ©n usamos " : " para acceder a TODOS los elementos de una fila/columna
 % La palabra "end" indexa "hasta el final" 
 matrix = [0.9 0.3 0.2; 0.3 0.9 0.4; 0.4 0.2 0.9];
 matrix(1,3)
@@ -34,12 +34,12 @@ mini_matrix=matrix(2:3,2:3)      % crea sub-matrix fila 2-3, columnas 2-3
 matrix(1,:)                      % vector fila 1, Todas las columnas
 matrix(:,1)                      % vector Todas las filas, columna 1x1
 
-% Indexación con escalares 
+% IndexaciÃ³n con escalares 
 x=[1:1:100]     % crea vector fila con valores 1 al 100 
 n=96;           % crea escalar n=96
-x(n:96)         % accedemos a todos los elementos a partir del n-ésimo
+x(n:96)         % accedemos a todos los elementos a partir del n-Ã©simo
 n=5;
-x(end-n+1:end)  % accedemos a los últimos "n" elementos
+x(end-n+1:end)  % accedemos a los Ãºltimos "n" elementos
 
 % creacion de vectores con series
 [1:5]           % crea vector elementos 1 a 5 
@@ -49,11 +49,11 @@ x(end-n+1:end)  % accedemos a los últimos "n" elementos
 
 %% Operaciones con elementos
 % Los ementos son escalares, vectores, o matrices. Por tanto, 
-% deben cumplirse las reglas de las operaciones arítmeticas
-size(VectorF)       % size(nombre_elemento): dezpliega tamaño elemento
+% deben cumplirse las reglas de las operaciones arÃ­tmeticas
+size(VectorF)       % size(nombre_elemento): dezpliega tamaÃ±o elemento
 size(VectorC)
-M=VectorF*VectorC   % Si el tamaño cumple, la operación se ejecuta
-size(M)             % Matriz resultante debe conformar con tamaño
+M=VectorF*VectorC   % Si el tamaÃ±o cumple, la operaciÃ³n se ejecuta
+size(M)             % Matriz resultante debe conformar con tamaÃ±o
 
 % Operaciones elemento a elemento
 A=[9 8;7 6]
@@ -63,13 +63,13 @@ A*B
 A.*B
 C^2 
 C.^2
- % Transposiciones: la transposición se ejecuta con ".'" (punto+apostrofe)
+ % Transposiciones: la transposiciÃ³n se ejecuta con ".'" (punto+apostrofe)
  % pero cuando se trabaja con numeros reales, se puede usar solo " ' "
  VectorC'
  VectorF'
  
  %%% Funciones
- %   El indexado de variables y los operadores matemáticos son ejemplos de comandos.
+ %   El indexado de variables y los operadores matemÃ¡ticos son ejemplos de comandos.
  %   algunos comandos de utilidad son "help"
 help round
  %   A diferencia de los comandos, las funciones utilizan argumentos. Por jemplo
@@ -78,18 +78,18 @@ help round
  sqrt(3^2 +4^2)
  
  %%% Cadena de caracteres
- %   Además de númericas, las variables pueden consistir en registros o cadenas
+ %   AdemÃ¡s de nÃºmericas, las variables pueden consistir en registros o cadenas
  %   de caracteres "strings", las cuales se definen con " ' "
  string1 = 'Hola mundo!'
  string2 = 'Que original, no?'
  string1(2,5)     % los strings se pueden indexar
  string1(end)
  %% Algunos elementos (constantes) que pueden ser usados con var strings:
- %  \t = TAB, \\ = barra invertida, \n = nueva linea, \' = apóstrofe
+ %  \t = TAB, \\ = barra invertida, \n = nueva linea, \' = apÃ³strofe
  conversacion='Don Jose:\t\t\"Hola Don Pepito\"\nDon Pepito:\t\t\"Hola Don Jose\"\n'
  printf(conversacion)       % standard output
  
- %%% Gráficas
+ %%% GrÃ¡ficas
  %%  plot(): grafica valores del vector
  y=(1:10).^2
  plot(y)        % note el eje x por default es ordinal
