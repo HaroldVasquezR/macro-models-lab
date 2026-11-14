@@ -1,0 +1,54 @@
+{
+  "validation_type": "independent_mathematical_verification_not_matlab_execution",
+  "python_version": "3.13.5",
+  "platform": "Linux",
+  "decimal_precision": 60,
+  "checks": [
+    {
+      "name": "manual_100_110_121",
+      "passed": true
+    },
+    {
+      "name": "zero_rate",
+      "passed": true
+    },
+    {
+      "name": "zero_horizon",
+      "passed": true
+    },
+    {
+      "name": "T_plus_1",
+      "passed": true
+    },
+    {
+      "name": "formula_vs_recursion",
+      "passed": true
+    },
+    {
+      "name": "negative_rate",
+      "passed": true
+    },
+    {
+      "name": "initial_scale",
+      "passed": true
+    },
+    {
+      "name": "gap_identity",
+      "passed": true
+    },
+    {
+      "name": "csv_dimensions",
+      "passed": true
+    },
+    {
+      "name": "csv_precision",
+      "passed": true
+    }
+  ],
+  "passed": 10,
+  "total": 10,
+  "max_csv_absolute_error": "4.68169830400E-13",
+  "matlab_executed": false,
+  "octave_executed": false,
+  "method": "Decimal recurrence versus closed formula and distributed CSV values"
+}
