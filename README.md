@@ -25,6 +25,17 @@ The laboratory introduces GNU Octave and progressively incorporates Dynare and o
 | `tests/` | Verification and reproducibility tests |
 | `reference-results/` | Reference outputs for checking model execution |
 
+## Available Learning Materials
+The laboratory materials are organized into sequential units.
+
+### Common Computational Foundations
+
+- [Unidad 0 — Introducción a GNU Octave](common/unidad-0-intro-octave/README.md)
+- [Unidad 1 — Primer experimento económico en Octave](common/unidad-1-primer-experimento/README.md)
+
+Teaching materials and instructions are provided in Spanish.
+Students should begin with Unidad 0 before proceeding to Unidad 1.
+
 ## Computational Topics
 
 ### Common Foundations
